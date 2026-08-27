@@ -4,6 +4,12 @@ POC simples para medir quanto tempo o Kokoro leva para gerar uma frase curta em 
 
 A página usa a voz `pf_dora` e mostra o tempo, em milissegundos, entre o clique e o WAV completo chegar ao navegador.
 
+## Executar com Node
+
+```powershell
+npm run up
+```
+
 ## Executar com Docker
 
 Com o Docker Desktop em execução, use um único comando na pasta do projeto:
