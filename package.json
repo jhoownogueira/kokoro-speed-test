@@ -1,0 +1,17 @@
+{
+  "name": "kokoro-speed-test",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Teste simples de latência do Kokoro TTS em PT-BR",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "up": "docker compose up --build"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
