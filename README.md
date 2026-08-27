@@ -30,6 +30,16 @@ Na primeira execução, a imagem/modelo pode levar alguns minutos para baixar e 
 
 O Kokoro não expõe sua porta diretamente ao computador: a interface se comunica com ele pela rede interna do Compose.
 
+### Usar GPU NVIDIA
+
+Se o Docker Desktop estiver configurado para acessar uma GPU NVIDIA, inicie com:
+
+```powershell
+docker compose -f compose.yaml -f compose.gpu.yaml up --build
+```
+
+O arquivo `compose.gpu.yaml` somente libera a GPU para o Kokoro; quem não tiver GPU pode usar o comando padrão normalmente.
+
 ## Executar sem Docker (opcional)
 
 Requer Node.js 20+ e Docker.
